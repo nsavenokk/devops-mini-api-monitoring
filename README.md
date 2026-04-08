@@ -31,7 +31,15 @@ This project simulates a real-world monitoring setup where:
 - Python (FastAPI)  
 - Prometheus  
 - Grafana  
-- Docker / Docker Compose  
+- Docker / Docker Compose
+
+## CI/CD
+
+This project includes a GitHub Actions pipeline that:
+- installs dependencies
+- checks Python syntax
+- verifies app import
+- builds Docker image
 
 ---
 
