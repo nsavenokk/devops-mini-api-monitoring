@@ -1,10 +1,10 @@
-# 🚀 DevOps Mini API Monitoring
+# DevOps Mini API Monitoring
 
 A small demo project for monitoring a FastAPI service using **Prometheus + Grafana + Docker Compose**.
 
 ---
 
-## 🎯 Use cases
+## Use cases
 
 This project simulates a real-world monitoring setup where:
 
@@ -15,7 +15,7 @@ This project simulates a real-world monitoring setup where:
 
 ---
 
-## ⚙️ Features
+## Features
 
 - FastAPI application  
 - Prometheus metrics (`/metrics`)  
@@ -26,7 +26,7 @@ This project simulates a real-world monitoring setup where:
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python (FastAPI)  
 - Prometheus  
@@ -35,7 +35,7 @@ This project simulates a real-world monitoring setup where:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 .
@@ -52,7 +52,7 @@ This project simulates a real-world monitoring setup where:
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 git clone https://github.com/nsavenokk/devops-mini-api-monitoring.git
@@ -62,18 +62,18 @@ docker compose up --build
 
 ---
 
-## 🌐 Endpoints
+## Endpoints
 
 - API → http://localhost:8000  
 - Swagger → http://localhost:8000/docs  
 - Metrics → http://localhost:8000/metrics  
 - Grafana → http://localhost:3000  
 
-🔐 Login: **admin / admin**
+Login: **admin / admin**
 
 ---
 
-## 📊 Grafana Dashboards
+## Grafana Dashboards
 
 - API Requests per Second  
 - Total Requests by Path  
@@ -81,7 +81,7 @@ docker compose up --build
 
 ---
 
-## 🧪 Example requests
+## Example requests
 
 ```bash
 curl http://localhost:8000/
@@ -90,7 +90,7 @@ curl http://localhost:8000/slow
 
 ---
 
-## 📸 Demo
+## Demo
 
 Example Grafana dashboard:
 
@@ -98,7 +98,7 @@ Example Grafana dashboard:
 
 ---
 
-## 📈 Example Prometheus Queries
+## Example Prometheus Queries
 
 ### Requests per second
 
@@ -123,7 +123,7 @@ histogram_quantile(
 
 ---
 
-## 🎓 What I learned
+## What I learned
 
 - How to instrument FastAPI with Prometheus  
 - How Prometheus collects and stores metrics  
@@ -133,7 +133,7 @@ histogram_quantile(
 
 ---
 
-## 💡 Why this project matters
+## Why this project matters
 
 This project demonstrates:
 
@@ -145,6 +145,6 @@ This project demonstrates:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Anastasiia Savenok**
