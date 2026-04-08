@@ -3,6 +3,14 @@
 A small demo project for monitoring a FastAPI service using **Prometheus + Grafana + Docker Compose**.
 
 ---
+## Use cases
+
+This project simulates a real-world monitoring setup where:
+
+* API traffic is tracked in real time
+* Slow endpoints can be detected via latency metrics
+* Request rates help identify load spikes
+* Dashboards provide quick operational insights
 
 ## Features
 
@@ -11,6 +19,7 @@ A small demo project for monitoring a FastAPI service using **Prometheus + Grafa
 * Request counter & latency (Histogram)
 * Grafana dashboards
 * Fully dockerized setup
+* Simulated slow endpoint for latency testing (`/slow`)
 
 ---
 
@@ -38,7 +47,12 @@ A small demo project for monitoring a FastAPI service using **Prometheus + Grafa
 └── README.md
 ```
 
----
+## Quick Start
+
+```bash
+git clone https://github.com/nsavenokk/devops-mini-api-monitoring.git
+cd devops-mini-api-monitoring
+docker compose up --build
 
 ## Run project
 
@@ -46,14 +60,13 @@ A small demo project for monitoring a FastAPI service using **Prometheus + Grafa
 docker compose up --build
 ```
 
----
-
 ## Endpoints
 
 * API: http://localhost:8000
 * Swagger: http://localhost:8000/docs
 * Metrics: http://localhost:8000/metrics
 * Grafana: http://localhost:3000
+  Login: admin / admin
 
 ---
 
@@ -75,6 +88,7 @@ curl http://localhost:8000/slow
 ---
 
 ## Demo
+Example Grafana dashboard with real-time metrics:
 
 ![Grafana Dashboard](screenshots/dashboard.png)
 
